@@ -1,0 +1,35 @@
+{
+  "name": "ppw2modernImplementation",
+  "version": "1.0.0",
+  "description": "Disciplina de PPW2 - IFG/Formosa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "riot": "riot --config riot.config -w",
+    "webpack": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micheljunio/ppw2018-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micheljunio/ppw2018-1/issues"
+  },
+  "homepage": "https://github.com/micheljunio/ppw2018-1#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "html-webpack-plugin": "^3.1.0",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  },
+  "dependencies": {
+    "riot": "^3.9.1"
+  }
+}
