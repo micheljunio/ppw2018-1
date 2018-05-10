@@ -25,6 +25,7 @@ route(executarRoute);
 route.start(true);
 
 export default function* handleRoute(action) {
+  console.log(action)
 
   switch (action.payload.parametros[0]) {
     case "home": {
