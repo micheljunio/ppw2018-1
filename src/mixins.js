@@ -1,6 +1,10 @@
 import store from "./store";
 import * as funcoesAuxiliares from "./funcoes-auxiliares";
 
+/* Os mixins fornecem uma maneira fácil de compartilhar a funcionalidade nas tags. 
+Quando uma tag é compilada pelo riot, quaisquer mixins definidos são adicionados e disponibilizados para uso na tag. */
+
+/* O state nada mais é que as informações dos reducers. */
 const state = { state: store.getState() };
 riot.mixin("state", state);
 

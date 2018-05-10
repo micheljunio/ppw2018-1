@@ -1,4 +1,6 @@
 import store from "./store";
+
+/* A catch errors irá centralizar qualquer erro de estado que vier a acontecer durante a roteirização. */ 
 export default function* catchErrors(fn, ...args) {
   try {
     yield* fn(...args);
