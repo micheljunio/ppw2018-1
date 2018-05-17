@@ -33,7 +33,7 @@
 
       	</div>
     </div>
-
+<Tfooter></Tfooter>
     <script>
 		this.items = [
 			{ title: 'Regata',done:true},
