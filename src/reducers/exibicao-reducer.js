@@ -9,7 +9,8 @@ estará fora de contexto.*/
 const initialState = {
     home: true,
     cadastrousuario: false,
-    pedidos: false
+    pedidos: false,
+    ListarPedidos: false
   };
   
   export default function exibicaoReducer(state = initialState, action) {
@@ -38,6 +39,16 @@ const initialState = {
 
       case "PEDIDOS_OFF": {
         const newState = {...state, pedidos: false};
+        return newState;
+      }
+
+      case "LISTARPEDIDOS_ON": {
+        const newState = { ...state, ListarPedidos: true};
+        return newState; 
+      }
+
+      case "LISTARPEDIDOS_OFF": {
+        const newState = {...state, ListarPedidos: false};
         return newState;
       }
       default: {

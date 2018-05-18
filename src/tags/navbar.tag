@@ -144,7 +144,7 @@
               </li>
              
              <li class="nav-item">
-                <a class="nav-link" href="#/pedidos">Pedidos</a>
+                <a class="nav-link" href="#/ListarPedidos">Pedidos</a>
               </li>
              
               
