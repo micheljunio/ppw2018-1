@@ -1,4 +1,4 @@
-<head>
+<navbar>
     <style>
     </style>
     <nav id="nav-bar" class="navbar navbar-expand-md navbar-light fixed-top">
@@ -130,7 +130,7 @@
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
                                 <button class="btn  my-2 my-sm-0 " type="submit">Entrar</button>
                               </form>
-                              <a href="#">Cadastrar-se</a>
+                              <a href="#/cadastroUsuario">Cadastrar-se</a>
                          </div>
                       </ul>
                     </div>
@@ -140,8 +140,13 @@
             </li>
              
               <li class="nav-item">
-                <a class="nav-link" href="">Atendimento</a>
+                <a class="nav-link">Atendimento</a>
               </li>
+             
+             <li class="nav-item">
+                <a class="nav-link" href="#/pedidos">Pedidos</a>
+              </li>
+             
               
             </ul>
           </div><!-- /ml-auto -->
@@ -153,4 +158,4 @@
     
     <script>
     </script>
-</head>
+</navbar>

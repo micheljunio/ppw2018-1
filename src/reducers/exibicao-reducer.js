@@ -8,7 +8,8 @@ estará fora de contexto.*/
 
 const initialState = {
     home: true,
-    sobre: false
+    cadastrousuario: false,
+    pedidos: false
   };
   
   export default function exibicaoReducer(state = initialState, action) {
@@ -21,12 +22,22 @@ const initialState = {
         const newState = { ...state, home: false };
         return newState;
       }
-      case "SOBRE_ON": {
-        const newState = { ...state, sobre: true };
+      case "CADASTROUSUARIO_ON": {
+        const newState = { ...state,cadastrousuario: true };
         return newState;
       }
-      case "SOBRE_OFF": {
-        const newState = { ...state, sobre: false };
+      case "CADASTROUSUARIO_OFF": {
+        const newState = { ...state, cadastrousuario: false };
+        return newState;
+      }
+
+      case "PEDIDOS_ON": {
+        const newState = { ...state, pedidos: true};
+        return newState; 
+      }
+
+      case "PEDIDOS_OFF": {
+        const newState = {...state, pedidos: false};
         return newState;
       }
       default: {
