@@ -1,13 +1,7 @@
 <app>
     <style>
     </style>
-    
-
-
-    
-    <head></head>
-    
-    <produtocategoria></produtocategoria>
+    <home if='{state.exibicaoReducer.home}' valor={'Sou a HOME'} ></home>
     <script>
         this.mixin('state')
         this.mixin('reduxGlobal')
