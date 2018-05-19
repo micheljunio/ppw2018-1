@@ -1,13 +1,11 @@
 <app>
     <style>
     </style>
-    
-
-
-    
-    <head></head>
-    
-    <produtocategoria></produtocategoria>
+    <home if='{state.exibicaoReducer.home}'></home>
+   <cadastrousuario if='{state.exibicaoReducer.cadastrousuario}'></cadastrousuario>
+    <pedidos if ='{state.exibicaoReducer.pedidos}'></pedidos>
+    <ListarPedidos if ='{state.exibicaoReducer.ListarPedidos}'></ListarPedidos>
+    <navbar></navbar>
     <script>
         this.mixin('state')
         this.mixin('reduxGlobal')

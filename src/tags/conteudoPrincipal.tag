@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<conteudoPrincipal>
 
-<head>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-	<title>Look DaHora</title>
-
-	<!-- Bootstrap -->
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Template -->
-	<link href="css/half-slider.css" rel="stylesheet">
 
 	<!-- CSS -->
 	<style>
@@ -61,9 +47,9 @@
 
 	</style>
 
-</head>
 
-<body>
+
+
 
 	<div class="container">
 		<link href="css/imagens.css" rel="stylesheet">
@@ -189,9 +175,7 @@
 	<!-- /.container -->
 
 	<!-- JavaScript -->
-	<script src="jquery/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script></script>
 
-</body>
+</conteudoPrincipal>
 
-</html>

@@ -46,8 +46,16 @@ export default function* handleRoute(action) {
       yield call(appControllers.homeController);
       break;
     }
-    case "sobre": {
-      yield call(appControllers.sobreController, action.payload);
+    case "cadastroUsuario": {
+      yield call(appControllers.cadastraUsuarioController, action.payload);
+      break;
+    }
+    case "pedidos": {
+      yield call(appControllers.pedidosController, action.payload);
+      break;
+    }
+    case "ListarPedidos": {
+      yield call(appControllers.listarPedidosController, action.payload);
       break;
     }
 

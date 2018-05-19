@@ -10,10 +10,25 @@ a componente.*/
 
 export function* homeController() {
   yield put({ type: "HOME_ON" });
-  yield put({ type: "SOBRE_OFF" });
+  yield put({ type: "CADASTROUSUARIO_OFF" });
 }
 
-export function* sobreController() {
-  yield put({ type: "SOBRE_ON" });
+export function* cadastraUsuarioController() {
+  yield put({ type: "CADASTROUSUARIO_ON" });
   yield put({ type: "HOME_OFF" });
+  yield put({type: "PEDIDOS_OFF" });
+}
+
+export function* pedidosController(){
+  yield put({type: "PEDIDOS_ON" });
+  yield put({type: "HOME_OFF"});
+ 
+
+}
+
+export function* listarPedidosController(){
+  yield put({type: "LISTARPEDIDOS_ON" });
+  yield put({type: "HOME_OFF"});
+ 
+
 }
