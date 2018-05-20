@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Look DaHora</title>
-
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<formularioCompra>
 
 	<style>
 		.container{ 
@@ -42,9 +33,6 @@
 		
 	</style>
 
-</head>
-
-<body>
 
 	<div class="jumbotron">
 
@@ -174,7 +162,4 @@
 			</div>
 
 	</div>
-
-</body>
-
-</html>
+</formularioCompra>
