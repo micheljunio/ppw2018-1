@@ -58,6 +58,10 @@ export default function* handleRoute(action) {
       yield call(appControllers.listarPedidosController, action.payload);
       break;
     }
+    case "produtocategoria": {
+      yield call(appControllers.produtocategoriaController, action.payload);
+      break;
+    }
 
     default: {
       throw 404;

@@ -32,3 +32,9 @@ export function* listarPedidosController(){
  
 
 }
+export function* produtoCategoriaController(){
+  yield put({type: "PRODUTOCATEGORIA_ON" });
+  yield put({type: "HOME_OFF"});
+ 
+
+}

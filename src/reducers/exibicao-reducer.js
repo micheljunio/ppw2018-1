@@ -10,7 +10,8 @@ const initialState = {
     home: true,
     cadastrousuario: false,
     pedidos: false,
-    ListarPedidos: false
+    ListarPedidos: false,
+    produtocategoria: false
   };
   
   export default function exibicaoReducer(state = initialState, action) {
@@ -49,6 +50,15 @@ const initialState = {
 
       case "LISTARPEDIDOS_OFF": {
         const newState = {...state, ListarPedidos: false};
+        return newState;
+      }
+      case "PRODUTOCATEGORIA_ON": {
+        const newState = { ...state, produtocategoria: true};
+        return newState; 
+      }
+
+      case "PRODUTOCATEGORIA_OFF": {
+        const newState = {...state, produtocategoria: false};
         return newState;
       }
       default: {
