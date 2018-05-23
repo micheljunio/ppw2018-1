@@ -37,11 +37,11 @@
                         
                         <div>
 
-                            <li><a href="#"> Vestidos</a></li>
-                            <li><a href="#"> Saias</a></li>
-                            <li><a href="#">Calças</a></li>
-                            <li><a href="#">Blusas</a></li>
-                            <li><a href="#"> Acessórios</a></li>
+                            <li><a href="#/produtocategoria"> Vestidos</a></li>
+                            <li><a href="#/produtocategoria"> Saias</a></li>
+                            <li><a href="#/produtocategoria">Calças</a></li>
+                            <li><a href="#/produtocategoria">Blusas</a></li>
+                            <li><a href="#/produtocategoria"> Acessórios</a></li>
                          </div>
                       </ul>
                     </div>
@@ -70,11 +70,11 @@
                         
                         
                         <div>
-                            <li><a href="#">Camisetas</a></li>
-                            <li><a href="#">Bermudas</a></li>
-                            <li><a href="#">Calças</a></li>
-                            <li><a href="#">Camisas</a></li>
-                            <li><a href="#"> Acessórios</a></li>
+                            <li><a href="#/produtocategoria">Camisetas</a></li>
+                            <li><a href="#/produtocategoria">Bermudas</a></li>
+                            <li><a href="#/produtocategoria">Calças</a></li>
+                            <li><a href="#/produtocategoria">Camisas</a></li>
+                            <li><a href="#/produtocategoria"> Acessórios</a></li>
                          </div>
                       </ul>
                     </div>
@@ -98,10 +98,10 @@
                         
                         
                         <div>
-                            <li><a href="#">Recém-nascido</a></li>
-                            <li><a href="#">Menina</a></li>
-                            <li><a href="#">Menino</a></li>
-                            <li><a href="#"> Acessórios</a></li>
+                            <li><a href="#/produtocategoria">Recém-nascido</a></li>
+                            <li><a href="#/produtocategoria">Menina</a></li>
+                            <li><a href="#/produtocategoria">Menino</a></li>
+                            <li><a href="#/produtocategoria"> Acessórios</a></li>
                          </div>
                       </ul>
                     </div>

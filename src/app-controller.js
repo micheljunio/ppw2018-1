@@ -11,17 +11,20 @@ a componente.*/
 export function* homeController() {
   yield put({ type: "HOME_ON" });
   yield put({ type: "CADASTROUSUARIO_OFF" });
+  yield put({type: "PRODUTOCATEGORIA_OFF" });
 }
 
 export function* cadastraUsuarioController() {
   yield put({ type: "CADASTROUSUARIO_ON" });
   yield put({ type: "HOME_OFF" });
   yield put({type: "PEDIDOS_OFF" });
+  yield put({type: "PRODUTOCATEGORIA_OFF" });
 }
 
 export function* pedidosController(){
   yield put({type: "PEDIDOS_ON" });
   yield put({type: "HOME_OFF"});
+  yield put({type: "PRODUTOCATEGORIA_OFF" });
  
 
 }
@@ -29,12 +32,16 @@ export function* pedidosController(){
 export function* listarPedidosController(){
   yield put({type: "LISTARPEDIDOS_ON" });
   yield put({type: "HOME_OFF"});
+  yield put({type: "PRODUTOCATEGORIA_OFF" });
  
 
 }
-export function* produtoCategoriaController(){
+export function* produtocategoriaController(){
   yield put({type: "PRODUTOCATEGORIA_ON" });
   yield put({type: "HOME_OFF"});
+  yield put({type: "PEDIDOS_OFF" });
+  yield put({ type: "CADASTROUSUARIO_OFF" });
+  yield put({type: "LISTARPEDIDOS_OFF" });
  
 
 }
