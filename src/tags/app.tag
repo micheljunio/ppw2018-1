@@ -7,6 +7,7 @@
     <ListarPedidos if ='{state.exibicaoReducer.ListarPedidos}'></ListarPedidos>
     <produtocategoria if ='{state.exibicaoReducer.produtocategoria}'></produtocategoria>
     <navbar></navbar>
+    <Tfooter></Tfooter>
     <script>
         this.mixin('state')
         this.mixin('reduxGlobal')
