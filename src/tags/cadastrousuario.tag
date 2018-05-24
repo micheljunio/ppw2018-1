@@ -20,7 +20,7 @@
         .cbotao{
             float: left;
             border-radius: 100px;
-            background: #708090;
+            background: #1C86EE;
             color:#fff;
         }
     </style>
