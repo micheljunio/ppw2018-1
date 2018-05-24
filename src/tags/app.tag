@@ -1,12 +1,13 @@
 <app>
     <style>
     </style>
+     <navbar></navbar>
     <home if='{state.exibicaoReducer.home}'></home>
    <cadastrousuario if='{state.exibicaoReducer.cadastrousuario}'></cadastrousuario>
     <pedidos if ='{state.exibicaoReducer.pedidos}'></pedidos>
     <ListarPedidos if ='{state.exibicaoReducer.ListarPedidos}'></ListarPedidos>
     <produtocategoria if ='{state.exibicaoReducer.produtocategoria}'></produtocategoria>
-    <navbar></navbar>
+    <Tfooter></Tfooter>
     <script>
         this.mixin('state')
         this.mixin('reduxGlobal')
