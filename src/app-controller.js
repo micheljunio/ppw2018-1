@@ -30,6 +30,7 @@ export function* pedidosController(){
 }
 
 export function* listarPedidosController(){
+  yield put({ type: "CADASTROUSUARIO_OFF" });
   yield put({type: "LISTARPEDIDOS_ON" });
   yield put({type: "HOME_OFF"});
   yield put({type: "PRODUTOCATEGORIA_OFF" });
