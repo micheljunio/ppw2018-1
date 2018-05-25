@@ -38,6 +38,12 @@
 			float: left;
 		}
 
+		.col-lg-6 {
+			width: 25%;
+			float: left;
+
+		}
+
 		#a {
 			width: 38%;
 		}
@@ -76,71 +82,57 @@
 				<form>
 
 					<fieldset>
-						<h3>Dados do Produto</h3>
+						<h3>Formas de Pagamento</h3>
 					</fieldset>
 
+					<div class="radio">
+						<label>
+							<input type="radio" name="optradio">Boleto</label>
+					</div>
+
+					<div class="radio">
+						<label>
+							<input type="radio" name="optradio">Cartão de Crédito</label>
+					</div>
 					<dl>
-						<dt>Produto</dt>
-						<dd>Vestido</dd>
-
-						<dt>Preço</dt>
-						<h3>$60</h3>
-
-						<dt>Cor</dt>
-						<div class="form-group">
-
-								<select class="form-control" id="a">
-									<option id="x">Vermelho</option>
-									<option id="x">Preto</option>
-									<option id="x">Azul</option>
-									<option id="x">Branco</option>
-								</select>
-							</div>
-
-						<dt>Tamanho</dt>
-						<div class="form-group">
-
-							<select class="form-control" id="b">
-								<option id="x">PP</option>
-								<option id="x">P</option>
-								<option id="x">M</option>
-								<option id="x">G</option>
-								<option id="x">GG</option>
-							</select>
-						</div>
-
-						<dt>Quantidade</dt>
-						<div class="form-group">
-
-							<select class="form-control" id="b">
-								<option id="x">1</option>
-								<option id="x">2</option>
-								<option id="x">3</option>
-								<option id="x">4</option>
-								<option id="x">5</option>
-							</select>
-						</div>
+						<dt>Calcular Frete</dt>
 					</dl>
 
-					<div class="form-check">
-						<label class="form-check-label">
-							<input type="checkbox" class="form-check-input" value=""> Reembolso completo
+					<div class="form-group" id="a">
+						<label for="cpf">CEP</label>
+						<input type="text" class="form-control" id="cep" name="cep" placeholder="Digite seu CEP">
+					</div>
+
+					<div class="col-lg-6">
+						<button type="submit" class="btn btn-default">Calcular</button>
+					</div>
+
+					<div class="col-lg-6">
+						<input type="text" class="form-control" name="result" placeholder="$$$">
+					</div>
+
+					<div class="checkbox">
+
+						<label>
+							<input type="checkbox"> Concordar com os termos de uso.
 						</label>
 					</div>
 
 					<div class="form-check">
 						<label class="form-check-label">
-							<input type="checkbox" class="form-check-input" value=""> Usar Cupom de desconto
+							<input type="radio" class="form-check-input" name="optradio">Opção de envio Padrão
+						</label>
+					</div>
+
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="radio" class="form-check-input" name="optradio">Opção de envio Express
 						</label>
 					</div>
 
 					<div>
 						<button type="submit" class="btn btn-primary" id="box">
-							Comprar
-						</button>
-
-						<button type="submit" class="btn btn-primary" id="box">
-							Adicione ao Carrinho
+							Confirmar Compra
 						</button>
 					</div>
 
