@@ -7,7 +7,7 @@
     <pedidos if ='{state.exibicaoReducer.pedidos}'></pedidos>
     <ListarPedidos if ='{state.exibicaoReducer.ListarPedidos}'></ListarPedidos>
     <produtocategoria if ='{state.exibicaoReducer.produtocategoria}'></produtocategoria>
-    <Tfooter></Tfooter>
+    <Tfooter> </Tfooter>
     <script>
         this.mixin('state')
         this.mixin('reduxGlobal')
