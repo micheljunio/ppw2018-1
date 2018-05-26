@@ -1,7 +1,9 @@
 <app>
     <style>
     </style>
-     <navbar></navbar>
+ 
+   
+  <navbar></navbar>
     <home if='{state.exibicaoReducer.home}'></home>
    <cadastrousuario if='{state.exibicaoReducer.cadastrousuario}'></cadastrousuario>
     <pedidos if ='{state.exibicaoReducer.pedidos}'></pedidos>
