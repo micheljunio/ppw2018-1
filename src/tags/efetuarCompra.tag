@@ -1,12 +1,5 @@
 
-<html lang="pt-br">
-
-<head>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Look DaHora</title>
-
+<efetuarCompra>
 	<style>
 		.container {
 			display: flex;
@@ -58,9 +51,9 @@
 		}
 	</style>
 
-</head>
 
-<body>
+
+
 	<div class="container">
 
 		<div class="panel panel-default">
@@ -154,6 +147,4 @@
 
 		</div>
 
-</body>
-
-</html>
+</efetuarCompra>
