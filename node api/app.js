@@ -12,6 +12,7 @@ mongoose.connect('mongodb://localhost/api', function(err){
 });
 app.use(bodyParser());
 
+
 var port =process.env.PORT || 3000;
 
 //ROTAS
