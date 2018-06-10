@@ -33,22 +33,22 @@
   <body>
     <h1>Pedidos</h1>
 
-    <div each="{city in cities}">
+    <div each="{ped in pedidos}">
 
     <div id="accordion" >
 
       <div class="card" >
         <div class="card-header" id="carde">
-          <div class="collapsed card-link" data-toggle="collapse" href= { "#" + city.id }>
+          <div class="collapsed card-link" data-toggle="collapse" href= { "#" + ped.id }>
             <div class="row">
               <div class="col-sm-3">
                 <span>Pedido:
-                  <strong>{city.pedido}</strong>
+                  <strong>{ped.pedido}</strong>
                 </span>
               </div>
               <div class="col-sm-3">
                 <span>Valor:
-                  <strong>{city.valor}</strong>
+                  <strong>{ped.valor}</strong>
                 </span>
               </div>
             </div>
@@ -58,7 +58,7 @@
           <div class="card-body">
 
 
-            <div class="row -8" style="border: solid">
+            <div class="row" style="border: solid">
               <div class="col-8" style="border: solid">
                 <figure>
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0auk6ezfAeLFcBb5SLrjpuAs715_xY41yqJV0TMilznl1QwJBgA" alt = "Sem imagen">
@@ -66,21 +66,21 @@
               </div>
               <div class="col-8" style="border: solid">
                   <ul class="list-group" >
-                      <li class="list-group"><span class = "TextoLista"> Vestido de Noiva</span></li>
-                      <li class="list-group"><span class = "TextoLista"> M</span></li>
-                      <li class="list-group"><span class = "TextoLista"> Unidades [1] </span></li>
-                      <li class="list-group"><span class = "TextoLista"> Entregue</span></li>
+                      <li class="list-group"><span class = "TextoLista">   {ped.nomeRoupa}</span></li>
+                      <li class="list-group"><span class = "TextoLista">   {ped.tamanhodaRoupa}</span></li>
+                      <li class="list-group"><span class = "TextoLista">  [{ped.quantidade}] </span></li>
+                      <li class="list-group"><span class = "TextoLista">   {ped.situacao}</span></li>
               
                     </ul> 
               </div>
 
               <div class="col-8">
                   <ul class="list-group">
-                      <li class="list-group" ><span class = "TextoLista">Caroline</span></li>
-                      <li class="list-group"><span class = "TextoLista">Rua: 4 Bairro: Pousada 2 N: 325</span>
+                      <li class="list-group" ><span class = "TextoLista">{ped.nomeCliente}</span></li>
+                      <li class="list-group"><span class = "TextoLista">{ped.Endereço}</span>
                       </li>
-                      <li class="list-group"><span class = "TextoLista">Frete [20,00]</span></li>
-                      <li class="list-group"><span class = "TextoLista">Boleto-Bancario</span></li>
+                      <li class="list-group"><span class = "TextoLista">{ped.freteValor}</span></li>
+                      <li class="list-group"><span class = "TextoLista">{ped.formaPagamento}</span></li>
 
                     </ul> 
               </div>
@@ -96,7 +96,8 @@
      
   <script> 
     this.cities = [
-	  { pedido : "123214124" , valor:"34",id:"a" }
+    { pedido : "123214124" , valor:"34",id:"a",nomeRoupa:"vestido",tamanhodaRoupa:"M",quantidade:"12",
+    situacao :"ola",nomeCliente:"marisleide",Endereço:"rua do nuna numero nao sei ava" }
  ];
   
   </script>
