@@ -21,6 +21,7 @@
   "homepage": "https://github.com/micheljunio/ppw2018-1#readme",
   "dependencies": {
     "autoprefixer": "^8.0.0",
+    "axios": "^0.18.0",
     "babel-eslint": "^8.2.1",
     "bootstrap": "^4.0.0",
     "exports-loader": "^0.7.0",

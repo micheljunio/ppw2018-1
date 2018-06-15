@@ -87,6 +87,7 @@ module.exports = {
       all: ["redux-saga/effects", "all"],
       call: ["redux-saga/effects", "call"],
       $: "jquery",
+      axios: "axios",
       jQuery: "jquery"
     }),
     new CopyWebpackPlugin([{ from: "src/imgs", to: "imgs" }]),

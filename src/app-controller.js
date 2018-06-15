@@ -11,6 +11,7 @@ a componente.*/
 export function* homeController() {
   yield put({ type: "HOME_ON" });
   yield put({ type: "SOBRE_OFF" });
+  yield call(sagasAux.fetchAxios, 'teste');
 }
 
 export function* sobreController() {
