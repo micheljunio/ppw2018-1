@@ -91,7 +91,7 @@ module.exports = {
       jQuery: "jquery"
     }),
     new CopyWebpackPlugin([{ from: "src/imgs", to: "imgs" }]),
-    new CopyWebpackPlugin([{ from: "src/fonts", to: "fonts" }]),
+    //new CopyWebpackPlugin([{ from: "src/fonts", to: "fonts" }]),
     new ExtractTextPlugin({
       filename: "css/[name].css",
       disable: false,

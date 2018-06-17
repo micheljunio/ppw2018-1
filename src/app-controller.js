@@ -11,7 +11,8 @@ a componente.*/
 export function* homeController() {
   yield put({ type: "HOME_ON" });
   yield put({ type: "SOBRE_OFF" });
-  yield call(sagasAux.fetchAxios, 'teste');
+  const data = yield call(sagasAux.fetchAxios, 'http://localhost:3000/persons/all');
+  yield put({type: 'UPDATE_PESSOAS', payload: data});
 }
 
 export function* sobreController() {
