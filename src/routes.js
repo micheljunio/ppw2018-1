@@ -62,7 +62,14 @@ export default function* handleRoute(action) {
       yield call(appControllers.produtocategoriaController, action.payload);
       break;
     }
-
+    case "formularioCompra": {
+      yield call(appControllers.formularioCompraController, action.payload);
+      break;
+    }
+    case "efetuarCompra": {
+      yield call(appControllers.efetuarCompraController, action.payload);
+      break;
+    }
     default: {
       throw 404;
     }

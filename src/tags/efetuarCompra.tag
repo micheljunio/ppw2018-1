@@ -1,5 +1,5 @@
 
-<html lang="pt-br">
+<efetuarCompra>
 
 <head>
 
@@ -148,12 +148,6 @@
 					<div class="card-body">
 						<p>Vestido vermelho elegante, com babados graciosos na barra que envolvem as pernas levemente, formando uma linda silhueta.
 							Com mangas, o vestido tem detalhes floridos na frente.</p>
-					</div>
-				</div>
-			</div>
 
-		</div>
 
-</body>
-
-</html>
+</efetuarCompra>

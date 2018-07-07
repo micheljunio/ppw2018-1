@@ -106,7 +106,7 @@
 						<p class="card-text">$30 ou 3x no Cartão de $12,99</p>
 					</div>
 					<div class="card-footer">
-						<a href="#" class="btn btn-primary">VER MAIS</a>
+						<a href="#/formularioCompra" class="btn btn-primary" >VER MAIS</a>
 					</div>
 				</div>
 			</div>
@@ -121,7 +121,7 @@
 						<p class="card-text">$60 ou 4x no Cartão de $17,99</p>
 					</div>
 					<div class="card-footer">
-						<a href="#" class="btn btn-primary">VER MAIS</a>
+						<a href="#/formularioCompra" class="btn btn-primary">VER MAIS</a>
 					</div>
 				</div>
 			</div>
@@ -136,7 +136,7 @@
 						<p class="card-text">$50 ou 4x no Cartão de $14,99</p>
 					</div>
 					<div class="card-footer">
-						<a href="#" class="btn btn-primary">VER MAIS</a>
+						<a href="#/formularioCompra" class="btn btn-primary">VER MAIS</a>
 					</div>
 				</div>
 			</div>

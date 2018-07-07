@@ -1,7 +1,7 @@
 <navbar>
     <style>
     </style>
-    <nav id="nav-bar" class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav id="nav-bar" class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
       <div class="container">
 
         <a class="navbar-brand" href="index.html">

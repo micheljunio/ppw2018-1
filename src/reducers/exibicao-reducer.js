@@ -11,7 +11,9 @@ const initialState = {
     cadastrousuario: false,
     pedidos: false,
     ListarPedidos: false,
-    produtocategoria: false
+    produtocategoria: false,
+    formularioCompra: false,
+    efetuarCompra: false
   };
   
   export default function exibicaoReducer(state = initialState, action) {
@@ -59,6 +61,26 @@ const initialState = {
 
       case "PRODUTOCATEGORIA_OFF": {
         const newState = {...state, produtocategoria: false};
+        return newState;
+      }
+
+      case "FORMULARIOCOMPRA_ON": {
+        const newState = {...state, formularioCompra: true};
+        return newState;
+      }
+
+      case "FORMULARIOCOMPRA_OFF": {
+        const newState = {...state, formularioCompra: false};
+        return newState;
+      }
+
+      case "EFETUARCOMPRA_ON": {
+        const newState = {...state, efetuarCompra: true};
+        return newState;
+      }
+
+      case "EFETUARCOMPRA_OFF": {
+        const newState = {...state, efetuarCompra: false};
         return newState;
       }
       default: {

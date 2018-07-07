@@ -1,5 +1,5 @@
 
-<html lang="pt-br">
+<formularioCompra>
 
 <head>
 
@@ -135,13 +135,8 @@
 					</div>
 
 					<div>
-						<button type="submit" class="btn btn-primary" id="box">
-							Comprar
-						</button>
-
-						<button type="submit" class="btn btn-primary" id="box">
-							Adicione ao Carrinho
-						</button>
+						<a href="#/efetuarCompra" class="btn btn-primary">Comprar</a>
+						<a href="#" class="btn btn-primary">Adicione ao Carrinho</a>
 					</div>
 
 				</form>
@@ -156,12 +151,6 @@
 					<div class="card-body">
 						<p>Vestido vermelho elegante, com babados graciosos na barra que envolvem as pernas levemente, formando uma linda silhueta.
 							Com mangas, o vestido tem detalhes floridos na frente.</p>
-					</div>
-				</div>
-			</div>
+			
 
-		</div>
-
-</body>
-
-</html>
+</formularioCompra>
