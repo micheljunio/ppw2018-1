@@ -1,5 +1,6 @@
 
 <efetuarCompra>
+<<<<<<< HEAD
 
 <head>
 
@@ -7,6 +8,8 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Look DaHora</title>
 
+=======
+>>>>>>> 6d92404d4e171671fd41ef9a65b2fd19b1587843
 	<style>
 		.container {
 			display: flex;
@@ -58,9 +61,9 @@
 		}
 	</style>
 
-</head>
 
-<body>
+
+
 	<div class="container">
 
 		<div class="panel panel-default">
@@ -149,5 +152,8 @@
 						<p>Vestido vermelho elegante, com babados graciosos na barra que envolvem as pernas levemente, formando uma linda silhueta.
 							Com mangas, o vestido tem detalhes floridos na frente.</p>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6d92404d4e171671fd41ef9a65b2fd19b1587843
 </efetuarCompra>
