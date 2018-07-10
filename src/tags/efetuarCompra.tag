@@ -1,6 +1,4 @@
-
 <efetuarCompra>
-
 	<style>
 		.container {
 			display: flex;
@@ -142,5 +140,4 @@
 					</div>
 				</div>
 			</div>
-
 </efetuarCompra>

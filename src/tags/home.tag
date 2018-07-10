@@ -146,6 +146,7 @@
 					<div class="card-footer">
 						<a href="#/formularioCompra" class="btn btn-primary">VER MAIS</a>
 					</div>
+				
 				</div>
 			</div>
 
@@ -176,6 +177,7 @@
 					<div class="card-footer">
 						<a href="#/formularioCompra" class="btn btn-primary">VER MAIS</a>
 					</div>
+					
 				</div>
 			</div>
 
