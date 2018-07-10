@@ -1,12 +1,7 @@
 <navbar>
     <style>
     </style>
-<<<<<<< HEAD
     <nav id="nav-bar" class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-=======
-
-    <nav id="nav-bar" class="navbar navbar-expand-md navbar-light fixed-top">
->>>>>>> 6d92404d4e171671fd41ef9a65b2fd19b1587843
       <div class="container">
 
         <a class="navbar-brand" href="index.html">

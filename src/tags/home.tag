@@ -14,15 +14,48 @@
  			 width:300px;
 		}
 	
-	.teste{
+		.teste{
 
-		height: 500px;
- 		width:500px;
-		 float:left;
+			height: 500px;
+ 			width:500px;
+		 	float:left;
 		
-	}
-		
-	
+		}
+
+		.card-text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.card-title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.col-lg-8 {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+
+		#x {
+			width: 300px;
+			height: 230px;
+		}
+
+		#y {
+			width: 300px;
+			height: 230px;
+		}
+
+		#z {
+			width: 300px;
+			height: 230px;
+		}
+
 	
 	</style>
 
@@ -100,99 +133,63 @@
 	</div>		
 
 
-	<div class="container maisV">
-		<div class="row">
-
-			<div class="col-sm-4 mb-4 teste">
-				<div class="card ">
-
+	<div class="row">
+			<div class="col-md-4 mb-4">
+				<div class="card h-100">
 					<div class="card-body">
-
-						<h2 class="card-title text-center">Camisa Masculina</h2>
-						<img class="card-img img-fluid d-block" src="imgs/m1.jpg" >
-						<p class="card-text text-muted text-center">$50 ou 4x no Cartão de $14,99</p>
-						
-						<div class="card-footer">
-								<a href="#" class="btn btn-primary">VER MAIS</a>
+						<h2 class="card-title">Camisa Masculina</h2>
+						<div class="col-lg-8">
+							<img class="img-fluid rounded" src="imgs/m1.jpg" id="z">
 						</div>
-<<<<<<< HEAD
 						<p class="card-text">$30 ou 3x no Cartão de $12,99</p>
 					</div>
 					<div class="card-footer">
-						<a href="#/formularioCompra" class="btn btn-primary" >VER MAIS</a>
-=======
-
->>>>>>> 6d92404d4e171671fd41ef9a65b2fd19b1587843
+						<a href="#/formularioCompra" class="btn btn-primary">VER MAIS</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-sm-4 mb-4 teste">
-				<div class="card ">
-	
+			<div class="col-md-4 mb-4">
+				<div class="card h-100">
 					<div class="card-body">
-	
-						<h2 class="card-title text-center">Vestido</h2>
-
-						<img class="card-img img-fluid d-block" src="imgs/f5.jpg" >
-						<p class="card-text text-muted text-center">$50 ou 4x no Cartão de $14,99</p>
-						
-						<div class="card-footer">
-							<a href="#" class="btn btn-primary">VER MAIS</a>
+						<h2 class="card-title">Vestido</h2>
+						<div class="col-lg-8">
+							<img class="img-fluid rounded" src="imgs/f5.jpg" id="y">
 						</div>
-<<<<<<< HEAD
 						<p class="card-text">$60 ou 4x no Cartão de $17,99</p>
 					</div>
 					<div class="card-footer">
 						<a href="#/formularioCompra" class="btn btn-primary">VER MAIS</a>
-=======
-
->>>>>>> 6d92404d4e171671fd41ef9a65b2fd19b1587843
 					</div>
 				</div>
 			</div>
-				<div class="col-sm-4 mb-4 teste">
-					<div class="card">
-		
-						<div class="card-body">
-		
-							<h2 class="card-title text-center">Casaco Masculino</h2>
 
-							<img class="card-img img-fluid d-block" src="imgs/m4.jpg" >
-							<p class="card-text text-muted text-center">$50 ou 4x no Cartão de $14,99</p>
-							
-							<div class="card-footer">
-									<a href="#" class="btn btn-primary">VER MAIS</a>
-							</div>
+			<div class="col-md-4 mb-4">
+				<div class="card h-100">
+					<div class="card-body">
+						<h2 class="card-title">Casaco Masculino</h2>
+						<div class="col-lg-8">
+							<img class="img-fluid rounded" src="imgs/m4.jpg" id="x">
 						</div>
-<<<<<<< HEAD
 						<p class="card-text">$50 ou 4x no Cartão de $14,99</p>
 					</div>
 					<div class="card-footer">
 						<a href="#/formularioCompra" class="btn btn-primary">VER MAIS</a>
-=======
->>>>>>> 6d92404d4e171671fd41ef9a65b2fd19b1587843
 					</div>
 				</div>
+			</div>
+
 		</div>
-	</div>
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-12 text-center my"> 
-				<h1 class="display-3">BEM VINDO AO LOOK DAHORA</h1>
-				<p>Há vários anos no mercado, o Look DaHora vem revolucionando o mercado brasileiro de modas. A melhor e mais completa loja
+
+		<section class="py-5">
+			<div class="container">
+				<h1>BEM VINDO AO LOOK DAHORA</h1>
+				<p> Há vários anos no mercado, o Look DaHora vem revolucionando o mercado brasileiro de modas. A melhor e mais completa loja
 					de roupas, aqui você encontra as melhores marcas para diferentes estilos, não só o que é tendência, mas outras vertentes
 					não ficam de fora. São varias categorias, possuindo em suas sessões roupas, acessórios, calçados, tendo como foco a
 					satifação de nossos consumidores. Entre os tantos estilos procure já o seu !</p>
-			 </div>
-		</div>
-	</div>
+			</div>
+		</section>
 
-
-		
-			
-
-		
 </home>
 
