@@ -1,4 +1,3 @@
-
 <efetuarCompra>
 	<style>
 		.container {
@@ -50,9 +49,6 @@
 			height: 30vw;
 		}
 	</style>
-
-
-
 
 	<div class="container">
 
@@ -144,7 +140,4 @@
 					</div>
 				</div>
 			</div>
-
-		</div>
-
 </efetuarCompra>

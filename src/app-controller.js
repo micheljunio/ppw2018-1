@@ -12,6 +12,7 @@ export function* homeController() {
   yield put({ type: "HOME_ON" });
   yield put({ type: "CADASTROUSUARIO_OFF" });
   yield put({type: "PRODUTOCATEGORIA_OFF" });
+
 }
 
 export function* cadastraUsuarioController() {
@@ -19,6 +20,7 @@ export function* cadastraUsuarioController() {
   yield put({ type: "HOME_OFF" });
   yield put({type: "PEDIDOS_OFF" });
   yield put({type: "PRODUTOCATEGORIA_OFF" });
+
 }
 
 export function* pedidosController(){
@@ -34,7 +36,7 @@ export function* listarPedidosController(){
   yield put({type: "LISTARPEDIDOS_ON" });
   yield put({type: "HOME_OFF"});
   yield put({type: "PRODUTOCATEGORIA_OFF" });
- 
+
 
 }
 export function* produtocategoriaController(){
@@ -43,6 +45,25 @@ export function* produtocategoriaController(){
   yield put({type: "PEDIDOS_OFF" });
   yield put({ type: "CADASTROUSUARIO_OFF" });
   yield put({type: "LISTARPEDIDOS_OFF" });
- 
+
+
+}
+export function* formularioCompraController(){
+  yield put({type: "FORMULARIOCOMPRA_ON" });
+  yield put({type: "PRODUTOCATEGORIA_OFF" });
+  yield put({type: "HOME_OFF"});
+  yield put({type: "PEDIDOS_OFF" });
+  yield put({ type: "CADASTROUSUARIO_OFF" });
+  yield put({type: "LISTARPEDIDOS_OFF" });
+
+}
+export function* efetuarCompraController(){
+  yield put({type: "EFETUARCOMPRA_ON" });
+  yield put({type: "FORMULARIOCOMPRA_OFF" });
+  yield put({type: "PRODUTOCATEGORIA_OFF" });
+  yield put({type: "HOME_OFF"});
+  yield put({type: "PEDIDOS_OFF" });
+  yield put({ type: "CADASTROUSUARIO_OFF" });
+  yield put({type: "LISTARPEDIDOS_OFF" });
 
 }

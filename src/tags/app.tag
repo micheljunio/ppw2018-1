@@ -9,7 +9,10 @@
     <pedidos if ='{state.exibicaoReducer.pedidos}'></pedidos>
     <ListarPedidos if ='{state.exibicaoReducer.ListarPedidos}'></ListarPedidos>
     <produtocategoria if ='{state.exibicaoReducer.produtocategoria}'></produtocategoria>
-    <Tfooter> </Tfooter>
+    <formularioCompra if ='{state.exibicaoReducer.formularioCompra}'></formularioCompra>
+    <efetuarCompra if ='{state.exibicaoReducer.efetuarCompra}'></efetuarCompra>
+    <navbar></navbar>
+    <Tfooter></Tfooter>
     <script>
         this.mixin('state')
         this.mixin('reduxGlobal')

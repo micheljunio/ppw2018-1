@@ -1,11 +1,5 @@
 
-<html lang="pt-br">
-
-<head>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Look DaHora</title>
+<formularioCompra>
 
 	<style>
 		.container {
@@ -52,9 +46,6 @@
 		}
 	</style>
 
-</head>
-
-<body>
 	<div class="container">
 
 		<div class="panel panel-default">
@@ -135,13 +126,8 @@
 					</div>
 
 					<div>
-						<button type="submit" class="btn btn-primary" id="box">
-							Comprar
-						</button>
-
-						<button type="submit" class="btn btn-primary" id="box">
-							Adicione ao Carrinho
-						</button>
+						<a href="#/efetuarCompra" class="btn btn-primary">Comprar</a>
+						<a href="#" class="btn btn-primary">Adicione ao Carrinho</a>
 					</div>
 
 				</form>
@@ -160,8 +146,4 @@
 				</div>
 			</div>
 
-		</div>
-
-</body>
-
-</html>
+</formularioCompra>
