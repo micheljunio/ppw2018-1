@@ -36,7 +36,6 @@
     "riot": "^3.8.1",
     "riot-route": "^3.1.2",
     "body-parser": "^1.18.3",
-    "http": "0.0.0",
     "mongoose": "^5.1.4"
   },
   "devDependencies": {

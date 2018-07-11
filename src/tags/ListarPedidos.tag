@@ -33,13 +33,12 @@
   <body>
     <h1>Pedidos</h1>
 
-    <div each="{ped in pedidos}">
 
-    <div id="accordion" >
+    <div id="accordion" each="{ped in pedidos}">
 
       <div class="card" >
         <div class="card-header" id="carde">
-          <div class="collapsed card-link" data-toggle="collapse" href= { "#" + ped.id }>
+          <div class="collapsed card-link" data-toggle="collapse">
             <div class="row">
               <div class="col-sm-3">
                 <span>Pedido:
@@ -91,7 +90,7 @@
           </div>
         </div>
       </div>
-      </div>
+      
 
      
   <script> 
