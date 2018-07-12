@@ -27,6 +27,8 @@ export function* cadastraUsuarioController() {
   yield put({type: "FORMULARIOCOMPRA_OFF" });
   yield put({type: "EFETUARCOMPRA_OFF" });
   yield put({type: "PRODUTOCATEGORIA_OFF" });
+  const data = yield call(sagasAux.fetchAxios, 'http://localhost:3000/persons/all');
+  yield put({type: 'UPDATE_PESSOAS', payload: data});
 
 }
 

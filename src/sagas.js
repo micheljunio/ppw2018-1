@@ -7,4 +7,7 @@ será executado através da comparação do type enviado com o primeiro parâmet
 
 export default function* rootSaga() {
     yield takeEvery("ROUTE", catchErrors, handleRoute);
+    yield takeEvery("UPDATE_PESSOA", sagasAux.updatePessoa);
+    yield takeEvery("ADICIONAR_PESSOA", sagasAux.adicionarPessoa);
+    yield takeEvery("DELETAR_PESSOA", sagasAux.deletarPessoa);
 }

@@ -187,15 +187,15 @@
         <div class="modal-body">
           <div class="form-group">
             <label for="formGroupNome">Nome</label>
-            <input type="text" class="form-control" placeholder="digite seu nome ">
+            <input type="text" value={this.dadosModal.nome} class="form-control" placeholder="digite seu nome ">
           </div>
           <div class="form-group">
             <label for="formGroupNome">E-mail</label>
-            <input type="text" class="form-control"  placeholder="digite seu nome ">
+            <input type="text" value={this.dadosModal.email} class="form-control"  placeholder="digite seu nome ">
           </div>
           <div class="form-group">
             <label for="formGroupSexo">Sexo</label>
-            <select class="form-control " id="FormSexo">
+            <select class="form-control " value={this.dadosModal.sexo} id="FormSexo">
               <option>Selecione</option>
               <option>Masculino</option>
               <option>Feminino</option>
@@ -205,17 +205,17 @@
 
           <div class="form-group">
             <label for="formGroupNome">CPF</label>
-            <input type="text" class="form-control" placeholder="digite seu CPF" maxlength="11">
+            <input type="text" value={this.dadosModal.cpf} class="form-control" placeholder="digite seu CPF" maxlength="11">
           </div>
 
           <div class="form-group">
             <label for="formGroupNome">Data de nascimento </label>
-            <input type="date" class="form-control">
+            <input type="date" value={this.dadosModal.dtn} class="form-control">
           </div>
 
           <div class="form-group">
               <label for="formGroupNome">Senha </label>
-              <input type="text" class="form-control" placeholder="digite sua Senha">
+              <input type="text" value={this.dadosModal.senha} class="form-control" placeholder="digite sua Senha">
             </div>
 
         </div>
@@ -224,6 +224,48 @@
 
 
     <script>
+   this.mixin('state')
+   this.mixin('reduxGlobal')
+   this.mixin('subscribeStateTag')
+   this.subscribeStateTag(this);
+ 
+   this.dadosModal = {};
+ 
+   atualizarRow (e) {
+     console.log(e.item);
+     this.dadosModal = e.item.item;
+     $('#GSCCModal').modal('show');
+ 
+   }
+ 
+   adicionarPessoa () {
+     $('#GSCCModal #nome').val(''),
+     $('#GSCCModal #sobrenome').val(''),
+     $('#GSCCModal #email').val('')
+     $("#deletarPessoa").hide();
+     $('#GSCCModal').modal('show');
+   }
+ 
+   
+ 
+     if(dados.nome == '' || dados.sobrenome == '' || dados.email == ''){
+       console.log("aqui");
+       $('#valida').text("Nenhum campo pode estar vazio");
+     }
+     else{
+       $('#valida').text("");
+       if(this.dadosModal._id != undefined){
+         this.dispatch(
+           {type:'UPDATE_PESSOA', payload: dados}
+         );
+       }
+       else{
+         this.dispatch(
+           {type:'ADICIONAR_PESSOA', payload: dados}
+         );
+       }
+     }
+   }
     </script>
 
 
