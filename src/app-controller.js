@@ -9,23 +9,34 @@ nesse caso no exibicao-reducer. Isso fará que algum case seja executado, atuali
 a componente.*/
 
 export function* homeController() {
-  yield put({ type: "HOME_ON" });
   yield put({ type: "CADASTROUSUARIO_OFF" });
+  yield put({type: "LISTARPEDIDOS_OFF" });
+  yield put({type: "HOME_ON"});
+  yield put({type: "PEDIDOS_OFF" });
+  yield put({type: "FORMULARIOCOMPRA_OFF" });
+  yield put({type: "EFETUARCOMPRA_OFF" });
   yield put({type: "PRODUTOCATEGORIA_OFF" });
 
 }
 
 export function* cadastraUsuarioController() {
   yield put({ type: "CADASTROUSUARIO_ON" });
-  yield put({ type: "HOME_OFF" });
+  yield put({type: "LISTARPEDIDOS_OFF" });
+  yield put({type: "HOME_OFF"});
   yield put({type: "PEDIDOS_OFF" });
+  yield put({type: "FORMULARIOCOMPRA_OFF" });
+  yield put({type: "EFETUARCOMPRA_OFF" });
   yield put({type: "PRODUTOCATEGORIA_OFF" });
 
 }
 
 export function* pedidosController(){
-  yield put({type: "PEDIDOS_ON" });
+  yield put({ type: "CADASTROUSUARIO_OFF" });
+  yield put({type: "LISTARPEDIDOS_OFF" });
   yield put({type: "HOME_OFF"});
+  yield put({type: "PEDIDOS_ON" });
+  yield put({type: "FORMULARIOCOMPRA_OFF" });
+  yield put({type: "EFETUARCOMPRA_OFF" });
   yield put({type: "PRODUTOCATEGORIA_OFF" });
  
 
@@ -35,16 +46,21 @@ export function* listarPedidosController(){
   yield put({ type: "CADASTROUSUARIO_OFF" });
   yield put({type: "LISTARPEDIDOS_ON" });
   yield put({type: "HOME_OFF"});
+  yield put({type: "PEDIDOS_OFF" });
+  yield put({type: "FORMULARIOCOMPRA_OFF" });
+  yield put({type: "EFETUARCOMPRA_OFF" });
   yield put({type: "PRODUTOCATEGORIA_OFF" });
 
 
 }
 export function* produtocategoriaController(){
+  yield put({type: "FORMULARIOCOMPRA_OFF" });
   yield put({type: "PRODUTOCATEGORIA_ON" });
   yield put({type: "HOME_OFF"});
   yield put({type: "PEDIDOS_OFF" });
   yield put({ type: "CADASTROUSUARIO_OFF" });
   yield put({type: "LISTARPEDIDOS_OFF" });
+  yield put({type: "EFETUARCOMPRA_OFF" });
 
 
 }
@@ -55,6 +71,7 @@ export function* formularioCompraController(){
   yield put({type: "PEDIDOS_OFF" });
   yield put({ type: "CADASTROUSUARIO_OFF" });
   yield put({type: "LISTARPEDIDOS_OFF" });
+  yield put({type: "EFETUARCOMPRA_OFF" });
 
 }
 export function* efetuarCompraController(){

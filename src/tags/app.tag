@@ -11,7 +11,6 @@
     <produtocategoria if ='{state.exibicaoReducer.produtocategoria}'></produtocategoria>
     <formularioCompra if ='{state.exibicaoReducer.formularioCompra}'></formularioCompra>
     <efetuarCompra if ='{state.exibicaoReducer.efetuarCompra}'></efetuarCompra>
-    <navbar></navbar>
     <Tfooter></Tfooter>
     <script>
         this.mixin('state')
