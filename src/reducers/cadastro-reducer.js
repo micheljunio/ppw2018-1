@@ -11,7 +11,7 @@ const initialState = {
       }]
     };
       
-      export default function homeReducer(state = initialState, action) {
+      export default function cadastroReducer(state = initialState, action) {
         switch (action.type) {
           case "UPDATE_PESSOAS": {
             const newState = {...state, dados: action.payload};

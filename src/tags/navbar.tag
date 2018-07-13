@@ -262,24 +262,7 @@
  
    
  
-     if(dados.nome == '' || dados.sobrenome == '' || dados.email == ''){
-       console.log("aqui");
-       $('#valida').text("Nenhum campo pode estar vazio");
-     }
-     else{
-       $('#valida').text("");
-       if(this.dadosModal._id != undefined){
-         this.dispatch(
-           {type:'UPDATE_PESSOA', payload: dados}
-         );
-       }
-       else{
-         this.dispatch(
-           {type:'ADICIONAR_PESSOA', payload: dados}
-         );
-       }
-     }
-   
+     
     </script>
 
 

@@ -13,7 +13,8 @@ const initialState = {
     ListarPedidos: false,
     produtocategoria: false,
     formularioCompra: false,
-    efetuarCompra: false
+    efetuarCompra: false,
+    login: false
   };
   
   export default function exibicaoReducer(state = initialState, action) {
@@ -81,6 +82,16 @@ const initialState = {
 
       case "EFETUARCOMPRA_OFF": {
         const newState = {...state, efetuarCompra: false};
+        return newState;
+      }
+
+      case "LOGIN_ON": {
+        const newState = {...state, login: true};
+        return newState;
+      }
+
+      case "LOGIN_OFF": {
+        const newState = {...state, login: false};
         return newState;
       }
       default: {

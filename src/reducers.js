@@ -1,5 +1,6 @@
 import exibicaoReducer from "./reducers/exibicao-reducer";
-import homeReducer from "./reducers/cadastro-reducer";
+import cadastroReducer from "./reducers/cadastro-reducer";
+import loginReducer from "./reducers/login-reducer";
   
 
 /* Os reducers definem os dados de cada componente e também dados auxiliares, como é o caso do
@@ -9,7 +10,8 @@ A função combineReducers abaixo é adicionada para combinar mais de um reducer
 
 const rootReducer = combineReducers({  
   exibicaoReducer,
-  cadastroReducer
+  cadastroReducer,
+  loginReducer
 });
 
 export default rootReducer;

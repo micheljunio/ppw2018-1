@@ -70,6 +70,10 @@ export default function* handleRoute(action) {
       yield call(appControllers.efetuarCompraController, action.payload);
       break;
     }
+    case "login": {
+      yield call(appControllers.loginController, action.payload);
+      break;
+    }
     default: {
       throw 404;
     }
