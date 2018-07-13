@@ -145,11 +145,21 @@
                     <div>
                       <ul>
                         <div>
+
+
+
+
                           <form class="form-inline">
                             <input class="form-control" type="Email" placeholder="Email">
                             <input class="form-control" type="password" placeholder="Senha">
-                            <button class="btn  my-2 my-sm-0 " type="submit">Entrar</button>
+                            <button class="btn  my-2 my-sm-0 " type="submit"  onclick={logar}>Entrar</button>
                           </form>
+
+
+
+
+
+
                           <a data-toggle="modal" data-target="#exampleModal">Cadastrar-se</a>
                         </div>
                       </ul>
@@ -265,7 +275,7 @@
          );
        }
      }
-   }
+   
     </script>
 
 
