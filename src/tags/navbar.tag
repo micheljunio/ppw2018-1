@@ -227,6 +227,10 @@
               <label for="formGroupNome">Senha </label>
               <input type="text" value={this.dadosModal.senha} class="form-control" placeholder="digite sua Senha">
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">fechar</button>
+                <button type="button" id= "cadastrar" onclick={salvarModificacoes} class="btn btn-success">Cadastrar</button>
+              </div>
 
         </div>
       </div>
