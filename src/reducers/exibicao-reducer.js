@@ -13,7 +13,8 @@ const initialState = {
     produtocategoria: false,
     formularioCompra: false,
     efetuarCompra: false,
-    login: false
+    login: false,
+    cadastro:false
   };
   
   export default function exibicaoReducer(state = initialState, action) {

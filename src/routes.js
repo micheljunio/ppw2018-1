@@ -73,7 +73,7 @@ export default function* handleRoute(action) {
     }
 
     case "cadastro": {
-      yield call(appControllers.cadastraUsuarioController, action.payload);
+      yield call(appControllers.cadastroController, action.payload);
       break;
     }
     default: {

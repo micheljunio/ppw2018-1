@@ -137,14 +137,14 @@
 			<div class="col-md-4 mb-4">
 				<div class="card h-100">
 					<div class="card-body">
-						<h2 class="card-title">Camisa Masculina</h2>
+						<h2 class="card-title" id="prod1n">Camisa Masculina</h2>
 						<div class="col-lg-8">
 							<img class="img-fluid rounded" src="imgs/m1.jpg" id="z">
 						</div>
-						<p class="card-text">$30 ou 3x no Cartão de $12,99</p>
+						<p class="card-text">$30 ou 3x no Cartão de </p><p id="prod1v">$12,99</p>
 					</div>
 					<div class="card-footer">
-						<a href="#/formularioCompra" class="btn btn-primary">VER MAIS</a>
+							<button type="submit" class="bnt btn-primary" onclick={produto1}>VerMais</button>
 					</div>
 				
 				</div>
@@ -185,13 +185,17 @@
 
 		<section class="py-5">
 			<div class="container">
-				<h1>BEM VINDO AO LOOK DAHORA</h1>
+				<h1>BEM VINDO {opts.email} AO LOOK DAHORA</h1>
 				<p> Há vários anos no mercado, o Look DaHora vem revolucionando o mercado brasileiro de modas. A melhor e mais completa loja
 					de roupas, aqui você encontra as melhores marcas para diferentes estilos, não só o que é tendência, mas outras vertentes
 					não ficam de fora. São varias categorias, possuindo em suas sessões roupas, acessórios, calçados, tendo como foco a
 					satifação de nossos consumidores. Entre os tantos estilos procure já o seu !</p>
 			</div>
 		</section>
+
+		<script>
+			opts.email = localStorage.getItem("email");
+		</script>
 
 </home>
 

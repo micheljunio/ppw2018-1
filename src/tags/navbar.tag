@@ -4,9 +4,6 @@
     <nav id="nav-bar" class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
       <div class="container">
 
-        <a class="navbar-brand" href="index.html">
-          <img class="logo" src="logo.png">
-        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -134,46 +131,15 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Login
-              </a>
-              <ul class="megamenu dropdown-menu">
-                <li>
-                  <div class="row container-fluid">
-                    <div>
-                      <ul>
-                        <div>
-
-
-
-
-                          <form class="form-inline">
-                            <input class="form-control" type="Email" placeholder="Email">
-                            <input class="form-control" type="password" placeholder="Senha">
-                            <button class="btn  my-2 my-sm-0 " type="submit"  onclick={logar}>Entrar</button>
-                          </form>
-
-
-
-
-
-
-                          <a data-toggle="modal" data-target="#exampleModal">Cadastrar-se</a>
-                        </div>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#/cadastro">Cadastrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#/login">Login</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link">Atendimento</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#/login">Pedidos</a>
+              <a class="nav-link" href="#/pedidos">Pedidos</a>
             </li>
           </ul>
         </div>

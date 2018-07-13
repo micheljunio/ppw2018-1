@@ -37,7 +37,7 @@
 
     <div id="accordion" >
 
-            <div class="card"each="{ped in pedidos}" >
+            <div class="card"each="{ped in opts.pedidos}" >
               <div class="card-header" id="carde" data-toggle="collapse" data-target= {ped.id} aria-expanded="true">
                   <div class="row">
                     <div class="col-sm-3">
@@ -83,14 +83,18 @@
               </div>
             </div>
             
-    <script> 
-            this.pedidos = [
-            { pedido : "123214124" , valor:"34",id:"#123214124",nomeRoupa:"vestido",tamanhodaRoupa:"M",quantidade:"12",
-            situacao :"ola",nomeCliente:"marisleide",endereco:"rua do nuna numero nao sei ava" },{ pedido : "1232141245" , valor:"34",id:"#1232141245",nomeRoupa:"vestido",tamanhodaRoupa:"M",quantidade:"12",
-            situacao :"horrivel",nomeCliente:"marisleide",endereco:"rua do nuna numero nao sei ava" }
-         ];
+    <script>
+
+
+   var axios = require('axios');
+   axios.get('https://lojaroupa.herokuapp.com/pedido').then(function(response){
+    opts.pedidos = response.data;
+    console.log(opts.pedidos);
+    
+      
+});  
           
-          </script>
+    </script>
                     
     
 
