@@ -6,7 +6,7 @@
     <navbar></navbar>
     <home if='{state.exibicaoReducer.home}'></home>
     <login if='{state.exibicaoReducer.login}'></login>
-   <cadastrousuario if='{state.exibicaoReducer.cadastrousuario}'></cadastrousuario>
+   <cadastro if='{state.exibicaoReducer.cadastro}'></cadastro>
     <pedidos if ='{state.exibicaoReducer.pedidos}'></pedidos>
     <ListarPedidos if ='{state.exibicaoReducer.ListarPedidos}'></ListarPedidos>
     <produtocategoria if ='{state.exibicaoReducer.produtocategoria}'></produtocategoria>

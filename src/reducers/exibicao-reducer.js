@@ -85,6 +85,16 @@ const initialState = {
         const newState = {...state, login: false};
         return newState;
       }
+
+      case "CADASTRO_ON": {
+        const newState = {...state, cadastro: true};
+        return newState;
+      }
+
+      case "CADASTRO_OFF": {
+        const newState = {...state, cadastro: false};
+        return newState;
+      }
       default: {
         return state;
       }

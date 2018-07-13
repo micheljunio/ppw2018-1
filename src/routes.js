@@ -71,6 +71,11 @@ export default function* handleRoute(action) {
       yield call(appControllers.loginController, action.payload);
       break;
     }
+
+    case "cadastro": {
+      yield call(appControllers.cadastraUsuarioController, action.payload);
+      break;
+    }
     default: {
       throw 404;
     }
