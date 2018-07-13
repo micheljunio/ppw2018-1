@@ -1,5 +1,4 @@
 import exibicaoReducer from "./reducers/exibicao-reducer";
-import cadastroReducer from "./reducers/cadastro-reducer";
 import loginReducer from "./reducers/login-reducer";
   
 
@@ -10,7 +9,6 @@ A função combineReducers abaixo é adicionada para combinar mais de um reducer
 
 const rootReducer = combineReducers({  
   exibicaoReducer,
-  cadastroReducer,
   loginReducer
 });
 

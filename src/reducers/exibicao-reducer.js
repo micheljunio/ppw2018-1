@@ -8,7 +8,6 @@ estará fora de contexto.*/
 
 const initialState = {
     home: true,
-    cadastrousuario: false,
     pedidos: false,
     ListarPedidos: false,
     produtocategoria: false,
@@ -25,14 +24,6 @@ const initialState = {
       }
       case "HOME_OFF": {
         const newState = { ...state, home: false };
-        return newState;
-      }
-      case "CADASTROUSUARIO_ON": {
-        const newState = { ...state,cadastrousuario: true };
-        return newState;
-      }
-      case "CADASTROUSUARIO_OFF": {
-        const newState = { ...state, cadastrousuario: false };
         return newState;
       }
 

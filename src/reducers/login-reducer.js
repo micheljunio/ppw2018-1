@@ -1,16 +1,18 @@
 const initialState = {
-    updateSpinner: false,
-    dados: [{
-      _id: '-',
-      email: '-',
-      password: '-'
-    }]
-  };
+  updateSpinner: false,
+  dados: [{
+    _id: '-',
+    nome: '-',
+    sobrenome: '-',
+    email: '-'
+  }]
+};
     
     export default function loginReducer(state = initialState, action) {
       switch (action.type) {
         case "UPDATE_PESSOAS": {
           const newState = {...state, dados: action.payload};
+          
           return newState;
         }
         case "SPINNER_UPDATE_ON": {

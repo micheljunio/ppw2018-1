@@ -87,10 +87,11 @@ module.exports = {
       all: ["redux-saga/effects", "all"],
       call: ["redux-saga/effects", "call"],
       $: "jquery",
+      axios: "axios",
       jQuery: "jquery"
     }),
     new CopyWebpackPlugin([{ from: "src/imgs", to: "imgs" }]),
-    new CopyWebpackPlugin([{ from: "src/fonts", to: "fonts" }]),
+    //new CopyWebpackPlugin([{ from: "src/fonts", to: "fonts" }]),
     new ExtractTextPlugin({
       filename: "css/[name].css",
       disable: false,

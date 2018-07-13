@@ -19,18 +19,6 @@ export function* homeController() {
   yield put({ type: "LOGIN_OFF" });
 }
 
-export function* cadastraUsuarioController() {
-  yield put({ type: "CADASTROUSUARIO_ON" });
-  yield put({type: "LISTARPEDIDOS_OFF" });
-  yield put({type: "HOME_OFF"});
-  yield put({type: "PEDIDOS_OFF" });
-  yield put({type: "FORMULARIOCOMPRA_OFF" });
-  yield put({type: "EFETUARCOMPRA_OFF" });
-  yield put({type: "PRODUTOCATEGORIA_OFF" });
-  const data = yield call(sagasAux.fetchAxios, 'https://lojaroupa.herokuapp.com/cadastro');
-  yield put({type: 'UPDATE_PESSOAS', payload: data});
-  yield put({ type: "LOGIN_OFF" });
-}
 
 export function* pedidosController(){
   yield put({ type: "CADASTROUSUARIO_OFF" });
@@ -97,4 +85,6 @@ export function* loginController() {
   yield put({type: "FORMULARIOCOMPRA_OFF" });
   yield put({type: "EFETUARCOMPRA_OFF" });
   yield put({type: "PRODUTOCATEGORIA_OFF" });
+  const data = yield call(sagasAux.fetchAxios, 'https://lojaroupa.herokuapp.com/cadastro');
+  yield put({type: 'UPDATE_PESSOAS', payload: data});
 }
