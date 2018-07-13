@@ -88,3 +88,14 @@ export function* loginController() {
   const data = yield call(sagasAux.fetchAxios, 'https://lojaroupa.herokuapp.com/cadastro');
   yield put({type: 'UPDATE_PESSOAS', payload: data});
 }
+
+export function* cadastraUsuarioController(){
+  yield put({type: "CADASTRO_ON" });
+  yield put({type: "EFETUARCOMPRA_OFF" });
+  yield put({type: "FORMULARIOCOMPRA_OFF" });
+  yield put({type: "PRODUTOCATEGORIA_OFF" });
+  yield put({type: "HOME_OFF"});
+  yield put({type: "PEDIDOS_OFF" });
+  yield put({ type: "CADASTROUSUARIO_OFF" });
+  yield put({type: "LISTARPEDIDOS_OFF" });
+}
