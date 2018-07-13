@@ -2,9 +2,9 @@ const initialState = {
   updateSpinner: false,
   dados: [{
     _id: '-',
-    nome: '-',
-    sobrenome: '-',
-    email: '-'
+    email: '-',
+    password: '-'
+    
   }]
 };
     
@@ -12,7 +12,7 @@ const initialState = {
       switch (action.type) {
         case "UPDATE_PESSOAS": {
           const newState = {...state, dados: action.payload};
-          
+
           return newState;
         }
         case "SPINNER_UPDATE_ON": {
@@ -24,6 +24,7 @@ const initialState = {
           return newState;
         }
         default: {
+          console.log("af");
           return state;
         }
       }

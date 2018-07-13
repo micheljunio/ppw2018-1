@@ -3,7 +3,7 @@
     </style>
  
    
- 
+    <navbar></navbar>
     <home if='{state.exibicaoReducer.home}'></home>
     <login if='{state.exibicaoReducer.login}'></login>
    <cadastrousuario if='{state.exibicaoReducer.cadastrousuario}'></cadastrousuario>

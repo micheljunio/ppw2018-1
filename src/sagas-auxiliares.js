@@ -14,7 +14,7 @@ export function* updatePessoa(action){
     const url = `http://localhost:3000/persons/${action.payload._id}`;
     yield call(axios.put, url, action.payload);
     const data = yield call(fetchAxios, 'https://lojaroupa.herokuapp.com/cadastro');
-    
+    yield put({type: 'UPDATE_PESSOAS', payload: data});
     yield put({type:"SPINNER_UPDATE_OFF"});
 }
 

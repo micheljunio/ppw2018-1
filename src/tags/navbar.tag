@@ -173,7 +173,7 @@
               <a class="nav-link">Atendimento</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#/pedidos">Pedidos</a>
+              <a class="nav-link" href="#/login">Pedidos</a>
             </li>
           </ul>
         </div>
